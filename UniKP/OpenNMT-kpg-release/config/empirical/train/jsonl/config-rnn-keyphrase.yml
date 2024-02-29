@@ -1,0 +1,51 @@
+data_type: keyphrase
+tgt_type: random
+
+exp: kp20k-one2seq-birnn-GRU150-EMB100-diverse-local
+exp_dir: output/meng17-one2seq-debug/kp20k-one2seq-birnn-GRU150-EMB100-diverse-local
+wandb_project: kp20k-meng17-one2seq
+wandb: 'true'
+wandb_key: 'c338136c195ab221b8c7cfaa446db16b2e86c6db'
+
+#data_format: jsonl
+#data: data/keyphrase/jsonl_tokenized/kp20k/
+data_format: pt
+vocab: data/keyphrase/meng17/kp20k.vocab.pt
+data: data/keyphrase/meng17/kp20k
+#save_checkpoint_steps: 10000
+#keep_checkpoint: 20
+seed: 3435
+#train_steps: 100000
+#valid_steps: 20000
+report_every: 10
+
+encoder_type: brnn
+rnn_type: GRU
+#word_vec_size: 100
+#rnn_size: 150
+#layers: 1
+
+optim: adam
+#learning_rate: 0.002
+adagrad_accumulator_init: 0.1
+max_grad_norm: 1
+
+#batch_size: 128
+#valid_batch_size: 128
+#dropout: 0.0
+batch_type: sents
+normalization: sents
+
+global_attention: mlp
+#copy_attn: 'true'
+#reuse_copy_attn: 'true'
+#bridge: 'true'
+tensorboard: 'false'
+log_file_level: DEBUG
+
+world_size: 1
+gpu_ranks:
+#[]
+- 0
+#- 1
+#master_port: 5000
