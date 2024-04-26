@@ -1,0 +1,26 @@
+micro present p,r,f@m
+0.0802 0.0579 0.0672
+micro present p,r,f@5
+0.083 0.0572 0.0677
+micro present p,r,f@o
+0.093 0.0492 0.0644
+macro present p,r,f@m
+0.0634 0.0625 0.063
+macro present p,r,f@k
+0.0653 0.0615 0.0633
+macro present p,r,f@o
+0.0656 0.0462 0.0542
+
+
+micro absent keyphrase p,r,f@m
+0.0043 0.0016 0.0023
+micro absent keyphrase p,r,f@5
+0.0043 0.0016 0.0023
+micro absent keyphrase p,r,f@o
+0.0043 0.0016 0.0023
+macro absent keyphrase p,r,f@m
+0.0043 0.0016 0.0024
+macro absent keyphrase p,r,f@5
+0.0043 0.0016 0.0024
+macro absent keyphrase p,r,f@o
+0.0043 0.0016 0.0024
